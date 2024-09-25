@@ -12,7 +12,7 @@ export default function PostForm({ create }) {
       id: Date.now(),
     };
     create(newPost);
-    setPost("");
+    setPost({ title: "", body: "" });
   };
 
   return (
