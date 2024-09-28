@@ -7,7 +7,6 @@ import { privateRoutes, publicRoutes } from "../router/MyRoutes";
 
 const AppRouter = () => {
   const { isAuth } = useContext(AuthContext);
-  console.log(isAuth);
 
   return isAuth ? (
     <Routes>
